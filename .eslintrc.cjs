@@ -8,8 +8,17 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "plugin:eslint-comments/recommended",
   ],
+  plugins: ["react-refresh"],
   parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint", "react", "react-refresh"],
+  parserOptions: {
+    ecmaVersion: "latest",
+    sourceType: "module",
+  },
+  settings: {
+    react: {
+      version: "detect"
+    }
+  },
   rules: {
     // Typescript rules
     "@typescript-eslint/no-unused-vars": [
