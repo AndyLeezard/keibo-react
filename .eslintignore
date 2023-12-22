@@ -1,0 +1,5 @@
+*.cjs
+dist/
+dev-dist/
+node-modules/
+*.min.js
