@@ -1,0 +1,16 @@
+.theme_btn {
+  transition: stroke 400ms;
+  @apply stroke-zinc-700 dark:stroke-sky-100;
+}
+
+.moon {
+  transition:
+    stroke-dasharray 0.5s ease-in,
+    opacity 300ms ease-in;
+}
+
+.sun {
+  transition:
+    stroke-dasharray 0.5s ease-in,
+    opacity 300ms ease-in;
+}

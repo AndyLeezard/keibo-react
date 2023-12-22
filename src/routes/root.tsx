@@ -1,7 +1,11 @@
-type Props = {}
+import Header from "@/components/layout/Header"
 
-const Root = (props: Props) => {
-  return <div>root</div>
+const Root = () => {
+  return (
+    <div>
+      <Header />
+    </div>
+  )
 }
 
 export default Root

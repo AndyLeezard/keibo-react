@@ -1,6 +1,5 @@
 import ReactDOM from "react-dom/client"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import "./index.css"
 import "./styles/tailwind.css"
 import "./styles/global.css"
 
@@ -8,6 +7,7 @@ import Root from "./routes/root"
 import ErrorPage from "./routes/error-page"
 import PageUno from "./routes/page-uno"
 import PageDos from "./routes/page-dos"
+import ThemeProvider from "./lib/theme/provider"
 
 const router = createBrowserRouter([
   {
@@ -39,5 +39,7 @@ const router = createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <RouterProvider router={router} />
+  <ThemeProvider>
+    <RouterProvider router={router} />
+  </ThemeProvider>
 )
