@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+  .all-unset {
+    all: unset;
+  }
+  .absolutely-center {
+    @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+  .disable-native-drag {
+    user-drag: none;
+    user-select: none;
+  }
+  .content-auto {
+    content-visibility: auto;
+  }
+}
