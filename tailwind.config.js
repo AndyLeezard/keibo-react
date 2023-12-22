@@ -1,4 +1,5 @@
 import plugin from "tailwindcss/plugin"
+import daisyui from "daisyui"
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -60,6 +61,7 @@ export default {
     },
   },
   plugins: [
+    daisyui,
     plugin(function ({ matchUtilities, theme }) {
       matchUtilities(
         {
