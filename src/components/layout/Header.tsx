@@ -30,14 +30,14 @@ const Header = () => {
       )}
     >
       <div className="ml-2 hidden lg:flex">
-        <h1 className="font-shadows-into-light text-3xl font-bold text-emerald-400">
+        <h1 className="font-shadows-into-light text-3xl font-bold text-primary">
           {"<Keibo/>"}
         </h1>
       </div>
       <div className="lg:hidden">
         <GiHamburgerMenu className="h-8 w-8" />
       </div>
-      <h1 className="font-shadows-into-light text-3xl font-bold text-emerald-400 lg:hidden">
+      <h1 className="font-shadows-into-light text-3xl font-bold text-primary lg:hidden">
         {"<Keibo/>"}
       </h1>
       <div className="lg:hidden"></div>

@@ -1,9 +1,6 @@
 import plugin from "tailwindcss/plugin"
 import daisyui from "daisyui"
-import {
-  light as theme_light,
-  dark as theme_dark,
-} from "daisyui/src/theming/themes"
+import { cupcake, night } from "daisyui/src/theming/themes"
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -80,7 +77,7 @@ export default {
   ],
   daisyui: {
     // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
-    themes: false,
+    themes: [{ light: cupcake }, { dark: night }],
     darkTheme: "dark", // name of one of the included themes for dark mode
     base: true, // applies background color and foreground color for root element by default
     styled: true, // include daisyUI colors and design decisions for all components
